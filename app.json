@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "PoubCoin",
+    "slug": "PoubCoin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F1F0E4"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "tn.poubcoin.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PoubCoin utilise la caméra pour photographier les déchets à signaler.",
+        "NSLocationWhenInUseUsageDescription": "PoubCoin utilise votre position pour géolocaliser vos signalements.",
+        "NSPhotoLibraryUsageDescription": "PoubCoin peut accéder à vos photos pour joindre une image à un signalement.",
+        "NSUserNotificationsUsageDescription": "PoubCoin vous notifie quand vos signalements sont validés et vos récompenses disponibles."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#F1F0E4"
+      },
+      "package": "tn.poubcoin.app",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "name": "PoubCoin",
+      "shortName": "PoubCoin",
+      "description": "Signalez les déchets, gagnez des PoubCoins !",
+      "themeColor": "#2E7D32",
+      "backgroundColor": "#F1F0E4"
+    },
+    "plugins": [
+      "expo-splash-screen",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#2E7D32"
+        }
+      ],
+      "expo-status-bar",
+      "expo-sharing",
+      "expo-image"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a9139374-426d-439d-9147-cfda295e886d"
+      }
+    },
+    "owner": "salmahamrouni"
+  }
+}
